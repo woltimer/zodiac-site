@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZODIAK - Jaki mam znak?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1 class="header-text">Jaki masz znak Zodiaku?</h1>
+        </div>
+        <div class="main-content">
+            <div class="forms-section">
+                <form>
+                    <div class="form-cols">
+                        <div class="col-month">
+                            <label for="month">Miesiąc:</label><br>
+                            <select id="month" name="month" required>
+                                <option value="">Wybierz miesiąc</option>
+                                <option value="0">Styczeń</option>
+                                <option value="1">Luty</option>
+                                <option value="2">Marzec</option>
+                                <option value="3">Kwiecień</option>
+                                <option value="4">Maj</option>
+                                <option value="5">Czerwiec</option>
+                                <option value="6">Lipiec</option>
+                                <option value="7">Sierpień</option>
+                                <option value="8">Wrzesień</option>
+                                <option value="9">Październik</option>
+                                <option value="10">Listopad</option>
+                                <option value="11">Grudzień</option>
+                            </select><br>
+                        </div>
+                        <div class="col-day">
+                            <label for="day">Dzień:</label><br>
+                            <select id="day" name="day" required>
+                                <option value="">Wybierz dzień</option>
+                                <!-- Days 1 to 31 -->
+                                <script>
+                                    for(let d=1; d<=31; d++) {
+                                    document.write(`<option value="${d}">${d}</option>`);
+                                    }
+                                </script>
+                            </select><br>
+                        </div>
+                    </div>
+                    <button type="submit" id="myButton" onclick="showLoading()">Oblicz znak zodiaku</button>
+                </form>
+
+                <div id="loading" class="hidden"></div>
+                <div id="message" class="hidden"></div>
+                <div id="visual-rep" class="hidden"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer-text">Copyright © 2025 · wolti</p>
+        </div>
+    </div>
+</body>
+</html>
