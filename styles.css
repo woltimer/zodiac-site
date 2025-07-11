@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     background-image: url('assets/stars.jpg');
     background-position: 200vh;
     background-size: cover;
@@ -23,7 +23,7 @@ body {
 }
 
 .main-content {
-    background-color: rgb(119, 0, 255);
+    background-color: rgb(0, 0, 0);
     background-image: url('assets/main-bg.jpg');
     background-size: cover;
     flex: 10;
@@ -37,12 +37,16 @@ body {
 }
 
 .footer {
-    background-color: rgb(132, 138, 132);
+    background-color: rgb(0, 0, 0);
     flex: 1;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     background-image: url('assets/stars.jpg');
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-text {
@@ -124,8 +128,26 @@ form button {
     flex-direction: column;
 }
 
-
 .footer-text {
+    flex: 1;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1vh;
+}
+
+.footer-privacy {
+    flex: 1;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1vh;
+}
+
+.footer-about {
+    flex: 1;
     color:white;
     font-weight: bold;
     text-align: center;
