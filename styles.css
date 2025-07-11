@@ -107,7 +107,8 @@ form button {
     min-height: 4vh;
     font-weight: bolder;
     font-size: large;
-    color: rgb(0, 15, 226);
+    color: rgb(255, 255, 255);
+    background-color: blue;
 }
 
 .form-cols {
