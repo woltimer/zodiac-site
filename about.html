@@ -9,31 +9,42 @@
   <meta name="robots" content="index, follow" />
   <style>
     body {
-        font-family: Inter, sans-serif;
-        max-width: 700px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-        line-height: 1.6;
-        background-color: white;
-        background-image: url('assets/stars.webp');
-        color: rgb(0, 0, 0);
+      font-family: Inter, sans-serif;
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      background-color: white;
+      background-image: url('assets/stars.webp');
+      color: rgb(0, 0, 0);
     }
     h1 {
-        text-align: center;
+      text-align: center;
     }
     .main-content {
-        background-color: white;
-        padding: 10vh;
+      background-color: white;
+      padding: 10vh;
     }
     p {
-        text-align: justify;
+      text-align: justify;
     }
     a {
-        color: #0033cc;
-        text-decoration: none;
+      color: #0033cc;
+      text-decoration: none;
     }
     a:hover {
-        text-decoration: underline;
+      text-decoration: underline;
+    }
+    .buttons {
+      display: block;
+      margin: 0 auto;
+      margin-top: 1vh;
+      min-width: 18vh;
+      min-height: 4vh;
+      font-weight: bolder;
+      font-size: large;
+      color: rgb(255, 255, 255);
+      background-color: blue;
     }
   </style>
 </head>
@@ -51,6 +62,7 @@
     <p>Masz pytanie, sugestię lub chcesz nawiązać kontakt? Napisz do mnie: <a href="mailto:wolticontact@gmail.com">wolticontact@gmail.com</a></p>
 
     <p>Dziękuję za odwiedzenie mojej strony!</p>
+    <button class="buttons" onclick="window.location.href='index.html'">Strona główna</button>
   </div>
 </body>
 </html>
