@@ -1,3 +1,7 @@
+if (window.location.pathname === "/index.html") {
+    window.location.replace("/");
+}
+
 
 function getZodiacSignText(dateObj) {
   const month = dateObj.getMonth(); // 0 = January, 11 = December
