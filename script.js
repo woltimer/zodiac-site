@@ -108,6 +108,7 @@ function showLoading() {
             message.innerHTML = `Data: ${formatted}<br>Znak: ${zodiacText}`;
         } else {
             message.innerText = 'Nie wybrano poprawnej daty.';
+            visualRep.style.backgroundImage = 'none';
         }
 
     message.classList.remove('hidden');
